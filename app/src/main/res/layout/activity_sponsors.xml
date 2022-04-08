@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".view.Sponsors"
+	tools:ignore="PrivateResource">
+
+	<ListView
+		android:id="@+id/lv_sponsors"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginBottom="8dp"
+		android:divider="@null"
+		android:dividerHeight="16dp"
+		android:padding="8dp"
+		app:layout_constraintBottom_toTopOf="@id/tv_sponsor_text"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:visibility="gone"
+		android:id="@+id/tv_sponsor_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:autoLink="all"
+		android:background="@drawable/outline_general"
+		android:padding="8dp"
+		android:text="@string/to_sponsor_contact_us_at_srijan_jduniv_gmail_com_or_soumyadip_maity_9333324765"
+		android:textColor="@android:color/black"
+		android:textSize="16sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<TextView
+		android:id="@+id/tv_no_sponsor"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/coming_soon"
+		android:textColor="@android:color/black"
+		android:textSize="28sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

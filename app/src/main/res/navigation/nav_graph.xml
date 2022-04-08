@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/nav_graph"
+	app:startDestination="@id/profileFrag">
+
+	<fragment
+		android:id="@+id/profileFrag"
+		android:name="in.srijanju.androidapp.view.Profile"
+		android:label="Dashboard"
+		tools:layout="@layout/activity_profile" />
+	<fragment
+		android:id="@+id/aboutFrag"
+		android:name="in.srijanju.androidapp.view.About"
+		android:label="About"
+		tools:layout="@layout/activity_about" />
+	<fragment
+		android:id="@+id/eventsFrag"
+		android:name="in.srijanju.androidapp.view.Events"
+		android:label="Events"
+		tools:layout="@layout/activity_events" />
+<!--	<fragment-->
+<!--		android:id="@+id/caFrag"-->
+<!--		android:name="in.srijanju.androidapp.view.Ambassador"-->
+<!--		android:label="Campus Ambassador"-->
+<!--		tools:layout="@layout/activity_ca" />-->
+	<fragment
+		android:id="@+id/galleryFrag"
+		android:name="in.srijanju.androidapp.view.Gallery"
+		android:label="Gallery"
+		tools:layout="@layout/activity_gallery" />
+	<fragment
+		android:id="@+id/sponsorsFrag"
+		android:name="in.srijanju.androidapp.view.Sponsors"
+		android:label="Sponsors"
+		tools:layout="@layout/activity_sponsors" />
+	<fragment
+		android:id="@+id/merchFrag"
+		android:name="in.srijanju.androidapp.view.Merch"
+		android:label="Merchandise"
+		tools:layout="@layout/activity_merch" />
+	<fragment
+		android:id="@+id/teamFrag"
+		android:name="in.srijanju.androidapp.view.Team"
+		android:label="Team"
+		tools:layout="@layout/activity_team" />
+</navigation>

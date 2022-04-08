@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fillViewport="true"
+	android:scrollbars="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingBottom="16dp">
+
+		<ImageView
+			android:id="@+id/ambassador_pic"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:adjustViewBounds="true"
+			android:contentDescription="@string/campus_ambassador_poster"
+			android:src="@drawable/poster_ca" />
+
+		<TextView
+			android:id="@+id/CA_text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="10dp"
+			android:gravity="start"
+			android:padding="8dp"
+			android:textColor="@android:color/black"
+			android:textSize="16sp" />
+
+		<Button
+			android:id="@+id/CA_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:background="@color/colorPrimaryDark"
+			android:text="@string/apply"
+			android:textAllCaps="true"
+			android:textColor="@android:color/white" />
+	</LinearLayout>
+</ScrollView>

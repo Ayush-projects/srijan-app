@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".view.EventDescription"
+	tools:ignore="PrivateResource">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<ImageView
+				android:id="@+id/poster"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:contentDescription="@string/poster"
+				android:scaleType="fitCenter" />
+
+			<androidx.cardview.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp">
+
+					<LinearLayout
+						android:id="@+id/ll_event_head"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent">
+
+						<TextView
+							android:id="@+id/event_name"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_margin="10dp"
+							android:layout_weight="5"
+							android:gravity="start"
+							android:textColor="@color/colorPrimaryDark"
+							android:textSize="28sp" />
+
+						<TextView
+							android:id="@+id/event_type"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_margin="10dp"
+							android:layout_weight="3"
+							android:gravity="end"
+							android:textAllCaps="true"
+							android:textColor="@color/colorPrimary"
+							android:textSize="16sp" />
+					</LinearLayout>
+
+					<TextView
+						android:id="@+id/event_description"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="10dp"
+						android:layout_marginTop="5dp"
+						android:layout_marginEnd="10dp"
+						android:gravity="start"
+						android:textColor="@android:color/black"
+						android:textSize="16sp"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toBottomOf="@id/ll_event_head" />
+				</androidx.constraintlayout.widget.ConstraintLayout>
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cv_rules"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:visibility="gone">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/event_rules"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="10dp"
+						android:layout_marginTop="5dp"
+						android:layout_marginEnd="10dp"
+						android:gravity="start"
+						android:text="@string/rules"
+						android:textAllCaps="true"
+						android:textColor="@color/colorPrimaryDark"
+						android:textSize="24sp" />
+
+					<TextView
+						android:id="@+id/event_rules_content"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="10dp"
+						android:layout_marginTop="5dp"
+						android:layout_marginEnd="10dp"
+						android:autoLink="all"
+						android:gravity="start"
+						android:textColor="@android:color/black"
+						android:textSize="16sp" />
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/event_contact"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="10dp"
+						android:layout_marginTop="5dp"
+						android:layout_marginEnd="10dp"
+						android:gravity="start"
+						android:text="@string/contact"
+						android:textAllCaps="true"
+						android:textColor="@color/colorPrimaryDark"
+						android:textSize="24sp" />
+
+					<TextView
+						android:id="@+id/event_contact_content"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="10dp"
+						android:layout_marginTop="5dp"
+						android:layout_marginEnd="10dp"
+						android:autoLink="phone"
+						android:gravity="start"
+						android:textColor="@android:color/black"
+						android:textSize="16sp" />
+
+					<Button
+						android:id="@+id/button"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:layout_margin="16dp"
+						android:fontFamily="sans-serif-bold"
+						android:textAllCaps="true"
+						android:textSize="16sp"
+						android:visibility="gone" />
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+		</LinearLayout>
+	</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

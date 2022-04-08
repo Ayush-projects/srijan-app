@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="8dp"
+	tools:context=".view.EventRegister">
+
+	<TextView
+		android:id="@+id/tv_event_reg"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:fontFamily="sans-serif-thin"
+		android:text="@string/event_registration"
+		android:textColor="@android:color/black"
+		android:textSize="40sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<ScrollView
+		android:id="@+id/sv_register"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:visibility="invisible"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/tv_event_reg">
+
+		<LinearLayout
+			android:id="@+id/linear"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/in_event_name"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15dp"
+				app:boxStrokeColor="@color/colorAccent"
+				app:hintTextColor="@color/colorAccent">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/et_event_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/event_name"
+					android:inputType="text" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/in_team_name"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				app:boxStrokeColor="@color/colorAccent"
+				app:errorEnabled="true"
+				app:errorTextColor="@android:color/holo_red_dark"
+				app:hintTextColor="@color/colorAccent">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/et_team_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/team_name"
+					android:inputType="text" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<TextView
+				android:id="@+id/tv_size"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginStart="4dp"
+				android:layout_marginTop="16dp"
+				android:layout_marginEnd="4dp"
+				android:gravity="center"
+				android:textColor="@android:color/holo_orange_dark"
+				android:textSize="14sp" />
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/in_team_lead"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15dp"
+				app:boxStrokeColor="@color/colorAccent"
+				app:hintTextColor="@color/colorAccent">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/et_team_lead"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/team_lead_email"
+					android:inputType="textEmailAddress" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/in_team_lead_contact"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15dp"
+				app:boxStrokeColor="@color/colorAccent"
+				app:hintTextColor="@color/colorAccent">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/et_team_lead_contact"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/team_lead_contact_number"
+					android:inputType="phone" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/in_team_mem1"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15dp"
+				app:boxStrokeColor="@color/colorAccent"
+				app:hintTextColor="@color/colorAccent">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/et_team_mem1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/team_member_1"
+					android:inputType="textEmailAddress" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<LinearLayout
+				android:id="@+id/linearlayout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginStart="4dp"
+				android:layout_marginTop="16dp"
+				android:layout_marginEnd="4dp"
+				android:gravity="center"
+				android:text="@string/you_can_not_change_your_details_later_please_fill_carefully"
+				android:textColor="@android:color/holo_orange_dark"
+				android:textSize="12sp" />
+
+			<Button
+				android:id="@+id/btn_register"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="4dp"
+				android:background="#4CAF50"
+				android:text="@string/register"
+				android:textAllCaps="true"
+				android:textColor="@android:color/white"
+				app:backgroundTint="#4CAF50" />
+		</LinearLayout>
+	</ScrollView>
+
+	<ProgressBar
+		android:id="@+id/progress"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:visibility="visible"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

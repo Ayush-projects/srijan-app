@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".view.About">
+
+	<androidx.cardview.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/srijanText"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="10dp"
+				android:padding="8dp"
+				android:textColor="@android:color/black"
+				android:textSize="16sp" />
+
+			<LinearLayout
+				android:id="@+id/clubsInfo"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				android:gravity="center">
+
+				<ImageView
+					android:id="@+id/JU_official"
+					android:layout_width="48dp"
+					android:layout_height="48dp"
+					android:layout_margin="8dp"
+					android:background="@android:color/white"
+					android:contentDescription="@string/jadavpur_university_logo"
+					android:src="@drawable/ju_logo" />
+
+				<ImageView
+					android:id="@+id/CC_official"
+					android:layout_width="48dp"
+					android:layout_height="48dp"
+					android:layout_margin="8dp"
+					android:background="@android:color/white"
+					android:contentDescription="@string/ccusl_logo"
+					android:src="@drawable/ccjusl_logo" />
+
+				<ImageView
+					android:id="@+id/GS_official"
+					android:layout_width="48dp"
+					android:layout_height="48dp"
+					android:layout_margin="8dp"
+					android:background="@android:color/white"
+					android:contentDescription="@string/ju_games_society_logo"
+					android:src="@drawable/ju_game_society_logo" />
+
+				<ImageView
+					android:id="@+id/SC_official"
+					android:layout_width="48dp"
+					android:layout_height="48dp"
+					android:layout_margin="8dp"
+					android:background="@android:color/white"
+					android:contentDescription="@string/ju_science_club_logo"
+					android:src="@drawable/jusc_logo" />
+			</LinearLayout>
+		</LinearLayout>
+	</androidx.cardview.widget.CardView>
+</ScrollView>
